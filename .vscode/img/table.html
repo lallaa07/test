@@ -1,0 +1,61 @@
+@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #tb-tag{
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table id="tb-tag">
+        <caption>테이블 태그 제목을의미함</caption>
+        <!--표의 제목을 의미함-->
+        <!--이 요소는 table 요소의 가장 첫번째 자식으로 와야함.-->
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>테이블이 담기는 테그</th>
+                <th>두껍고 가운데 정렬이 기본값</th>
+            </tr>
+        </thead>
+        <!--열의 제목으로 구성된 행의 집합
+        이 요소는 table요소에서 한번만 쓸 수 있음.
+        tbody, tfoot보다 먼저 선언되어야 함.-->
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>데이터가 담겨지는 태그</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>윗층에서 하나를 가져감. 여기는 td가 두개뿐임</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>정상화된 tr층</td>
+            <td>3개의 칸으로 정상화 되었음</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+<!--도표의 본문에 해당되는 영역
+tbody는 여러번 선언가능-->
+<tfoot>
+    <tr>
+        옆으로 td 3개를 모두 병합
+        <td>
+        </td>
+    </tr>
+</tfoot>
+</html>

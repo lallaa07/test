@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #tb-tag{
+            width: 800px;
+            margin: 0 auto;
+        }
+        table, th, td{
+            border: solid 1px #000;
+            border-collapse: collapse;
+        }
+    caption{
+        line-height: 150px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <table id="tb-tag">
+        <caption>테이블 태그 제목을 의미함</caption>
+        <thead>
+            <th>no</th>
+            <th>오늘 할일</th>
+            <th>내일 할일</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>데이터가 담겨지는 태그, <b>피그마 뿌시기</b></td>
+                <td rowspan="2">아래의 td 태그와 병합할거임</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>윗층에서 하나를 가져감. 여기는 td가 두개뿐임, <b>운동하기</b></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><em>정상화된 tr층, 코드연습하기</em></td>
+                <td><b>3개의 칸으로 정상화 되었음</b></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" height="400" align="center" valign="middle">옆으로 td 3개를 모두 병합<br>
+                </td>
+            </tr>
+        </tfoot>
+</body>
+</html>
